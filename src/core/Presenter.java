@@ -1,14 +1,17 @@
+package core;
+
+import program.Log;
+
 import java.util.Scanner;
 
 public class Presenter {
     View view;
-    RealModel model;
-
+    UniversalModel model;
     private final Log log;
 
     public Presenter(View view) {
         this.view = view;
-        log = new Log("Presenter");
+        log = new Log("core.Presenter");
     }
 
     public void startReal(RealCalcModel model) {

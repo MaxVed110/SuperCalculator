@@ -1,18 +1,10 @@
-public class RealCalcModel extends RealModel implements Model<Double> {
+package core;
 
-    private final Log log = new Log("RealCalcModel");
+import program.Log;
 
-    @Override
-    public void setX(double x) {
-        this.x = x;
-        log.LogDebug("Set real x");
-    }
+public class RealCalcModel extends UniversalModel implements Model<Double> {
 
-    @Override
-    public void setY(double y) {
-        this.y = y;
-        log.LogDebug("Set real y");
-    }
+    private final Log log = new Log("core.RealCalcModel");
 
     @Override
     public Double resultSum() {

@@ -1,8 +1,15 @@
+package program;
+
+import core.ComplexCalcModel;
+import core.Presenter;
+import core.RealCalcModel;
+import core.View;
+
 import java.util.Scanner;
 
 public class App {
 
-    private final Log log = new Log("App");
+    private final Log log = new Log("program.App");
 
     public void start() {
         log.LogInfo("Start calculator");

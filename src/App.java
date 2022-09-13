@@ -15,7 +15,7 @@ public class App {
             while (true) {
                 System.out.println("Выберете режим: R / I\nВыйти из программы - Е");
                 String key = scan.next();
-                if (key.equals("E")){
+                if (key.equals("E")) {
                     System.out.println("Выход...");
                     log.LogInfo("Exit program");
                     break;

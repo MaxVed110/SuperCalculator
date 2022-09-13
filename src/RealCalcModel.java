@@ -1,4 +1,4 @@
-public class RealCalcModel extends RealModel implements Model<Double>{
+public class RealCalcModel extends RealModel implements Model<Double> {
 
     private final Log log = new Log("RealCalcModel");
 
@@ -13,6 +13,7 @@ public class RealCalcModel extends RealModel implements Model<Double>{
         this.y = y;
         log.LogDebug("Set real y");
     }
+
     @Override
     public Double resultSum() {
         log.LogInfo("Sum");
@@ -34,6 +35,6 @@ public class RealCalcModel extends RealModel implements Model<Double>{
     @Override
     public Double resultDiv() {
         log.LogInfo("Div");
-        return Math.round(x/y * 100d) / 100d;
+        return Math.round(x / y * 100d) / 100d;
     }
 }
